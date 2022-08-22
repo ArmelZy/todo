@@ -36,9 +36,11 @@ const TodoList = ({todos, setTodos, setEditTodo}) => {
                     <button className='button-complete task-button' onClick={() => handleComplete(todo)}>
                         <i className='fa fa-check-circle'/>
                     </button>
-                    <button className='button-edit task-button' onClick={() => handleEdit(todo)}>
-                        <i className='fa fa-edit'/>
-                    </button>
+                    {!todo.completed && 
+                        <button className='button-edit task-button' onClick={() => handleEdit(todo)}>
+                            <i className='fa fa-edit'/>
+                        </button>
+                    }
                     <button className='button-delete task-button' onClick={() => handleDelete(todo)}>
                         <i className='fa fa-trash'/>
                     </button>
