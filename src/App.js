@@ -1,9 +1,14 @@
 import './App.css';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      App Todo
+    <div className="container">
+      <div className='app-wrapper'>
+        <div>
+          <Header/>
+        </div>
+      </div>
     </div>
   );
 }
