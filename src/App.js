@@ -1,4 +1,5 @@
 import './App.css';
+import Form from './components/Form';
 import Header from './components/Header';
 
 function App() {
@@ -7,6 +8,9 @@ function App() {
       <div className='app-wrapper'>
         <div>
           <Header/>
+        </div>
+        <div>
+          <Form/>
         </div>
       </div>
     </div>
