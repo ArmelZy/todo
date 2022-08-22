@@ -85,7 +85,7 @@
   color: lightseagreen;
 }
 
-.complete {
+.completed {
   text-decoration-style: solid;
   text-decoration-line: line-through;
   text-decoration-color: #ff6c6c;
