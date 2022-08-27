@@ -30,8 +30,20 @@ const Form = ({input, setInput, todos, setTodos, editTodo, setEditTodo}) => {
       } else {
         setInput("");
       }
-    
     }, [setInput, editTodo])
+
+    useEffect(() => {
+      // Body of the callBack
+      alert("Hello Body");
+      return () => {
+        if(editTodo && input){
+          alert("Hello return");
+          setInput("");
+          setEditTodo(null);
+        }
+      }
+    }, [todos]);
+    
     
 
   return (
